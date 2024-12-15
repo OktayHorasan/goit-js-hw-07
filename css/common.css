@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --black: #000000;
+    --light-purple: #f6f6fe;
+    --dark-purple: #2e2f42;
+    --grey: #808080;
+    --white: #ffffff;
+    --blue: #4e75ff;
+    --red: #ff4e4e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+/* Task-1 */
+#categories {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    background-color: var(--light-purple);
+    border-radius: 8px;
+    padding: 16px;
+    width: 392px;
+}
+
+.item h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    color: var(--dark-purple);
+}
+
+#categories ul li {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 40px;
+    padding: 8px 16px;
+    margin: 8px 0px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+/* Task-2 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 76px 156px;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.image-item {
+    width: calc((100% - 48px) / 3);
+    height: 300px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Task-3 */
+#name-input {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+#name-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--dark-purple);
+    padding: 8px 16px;
+}
+
+#name-output+h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.04em;
+    color: var(--dark-purple);
+}
+
+/* Task-4 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 24px;
+    width: 408px;
+    height: 280px;
+    background-color: var(--white);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--dark-purple);
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+button[type="submit"] {
+    margin-top: 8px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+    background-color: var(--blue);
+    border-color: var(--blue);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+
+/* Task-5 */
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 100vh;
+    text-align: center;
+}
+
+.widget p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--dark-purple);
+}
+
+.change-color {
+    border-radius: 8px;
+    border-color: var(--blue);
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+    background: var(--blue);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+/* Task-6 */
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+    background-color: var(--light-purple);
+}
+
+input[type="number"] {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    padding: 8px 56px;
+    width: 150px;
+    height: 40px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+button[data-create] {
+    border-radius: 8px;
+    border-color: var(--blue);
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: var(--blue);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button[data-destroy] {
+    border-radius: 8px;
+    border-color: var(--red);
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    margin-top: 16px;
+    background-color: var(--light-purple);
+    border-radius: 8px;
+    padding: 30px;
+    width: 486px;
+    min-height: auto;
+}
